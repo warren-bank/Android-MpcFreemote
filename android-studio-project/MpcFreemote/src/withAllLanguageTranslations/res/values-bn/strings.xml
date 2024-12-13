@@ -1,4 +1,5 @@
 <resources>
+    <string name="main_menu_title_remote_control">দূরবর্তী নিয়ন্ত্রণ</string>
     <string name="main_menu_title_dir_listing">ব্রাউজ</string>
     <string name="dir_listing_current_path">বর্তমান পাথ ...</string>
     <string name="dir_listing_onclick_action">ব্রাউজ করার জন্য ফাইলের নাম ক্লিক করুন</string>

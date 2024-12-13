@@ -1,4 +1,5 @@
 <resources>
+    <string name="main_menu_title_remote_control">Oddaljeni nadzor</string>
     <string name="main_menu_title_dir_listing">Brskanje</string>
     <string name="dir_listing_current_path">Trenutna pot ...</string>
     <string name="dir_listing_onclick_action">Ime datoteke-kliknite za brskanje</string>

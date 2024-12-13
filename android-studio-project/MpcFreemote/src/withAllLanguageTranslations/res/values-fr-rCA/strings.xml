@@ -1,4 +1,5 @@
 <resources>
+    <string name="main_menu_title_remote_control">Télécommande</string>
     <string name="main_menu_title_dir_listing">Parcourir</string>
     <string name="dir_listing_current_path">Chemin actuel ...</string>
     <string name="dir_listing_onclick_action">Nom du fichier-cliquez pour parcourir</string>

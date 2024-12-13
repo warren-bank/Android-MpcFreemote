@@ -1,4 +1,5 @@
 <resources>
+    <string name="main_menu_title_remote_control">Control remoto</string>
     <string name="main_menu_title_dir_listing">Examinar</string>
     <string name="dir_listing_current_path">Vía de acceso actual ...</string>
     <string name="dir_listing_onclick_action">Nombre de archivo-pulse para examinar</string>
