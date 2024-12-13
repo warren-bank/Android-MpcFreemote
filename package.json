@@ -1,0 +1,18 @@
+{
+  "name": "@warren-bank/Android-MpcFreemote",
+  "private": true,
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@warren-bank/translate-android-strings": "^1.8.1"
+  },
+  "scripts": {
+    "translate:app":       "translate-android-strings -i \"en\" -f \"android-studio-project/MpcFreemote/src/main/res/values/strings.xml\" -d \"android-studio-project/MpcFreemote/src/withAllLanguageTranslations/res\" -m --na --nc --nw -b \"(?:MpcFreemote|MPC-HC|MPC|%1$s)\"",
+    "translate:app:debug": "npm run translate:app -- -o \"en\" --debug",
+
+    "translate:wmcommand":       "translate-android-strings -i \"en\" -f \"android-studio-project/MpcFreemote/src/main/res/values/strings_wmcommand.xml\" -d \"android-studio-project/MpcFreemote/src/withAllLanguageTranslations/res\" -m --na --nc --nw",
+    "translate:wmcommand:debug": "npm run translate:wmcommand -- -o \"en\" --debug",
+
+    "translate":       "npm run translate:app       && npm run translate:wmcommand",
+    "translate:debug": "npm run translate:app:debug && npm run translate:wmcommand:debug"
+  }
+}

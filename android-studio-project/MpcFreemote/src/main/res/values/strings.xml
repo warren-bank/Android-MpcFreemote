@@ -1,0 +1,51 @@
+<resources>
+    <string translatable="false" name="app_name">MpcFreemote</string>
+    <string translatable="false" name="server_select_current_server">MPC-HC: %1$s</string>
+    <string translatable="false" name="server_select_manual_selection_default_ip">192.168.0.</string>
+    <string translatable="false" name="server_select_manual_selection_default_port">8192</string>
+
+    <string name="main_menu_title_dir_listing">Browse</string>
+    <string name="dir_listing_current_path">Current path…</string>
+    <string name="dir_listing_action_description">@string/wDirListing_ManageBookmark_label</string>
+    <string name="dir_listing_onclick_action">File name - click to browse</string>
+    <string name="dir_listing_file_or_directory_icon">File or directory icon</string>
+    <string name="server_element_name_placeholder">Server name</string>
+    <string name="status_mpc_cant_connect">Could not connect to MPC-HC%1$s. Please select a new server.</string>
+    <string name="status_mpc_cant_connect_at"> at %1$s</string>
+    <string name="status_theme_apply_fail">Could not apply new theme. Will try after restart.</string>
+    <string name="main_menu_title_servers">Servers</string>
+    <string name="status_no_network_detected">MpcFreemote can\'t detect any networking interfaces configured in this device. Are you sure you are online?</string>
+    <string name="server_select_manual_selection_set">Use this server…</string>
+    <string name="server_select_manual_selection_label">Manually select server:</string>
+    <string name="server_select_auto_selection_label">Use a server from the detected list:</string>
+    <string name="server_select_manual_selection_default_ip_hint">Enter your server\'s IP address</string>
+    <string name="server_select_manual_selection_default_port_hint">Enter your server\'s port</string>
+    <string name="server_select_toggle_scanning_stop">Stop scanning…</string>
+    <string name="server_select_toggle_scanning_start">Start scanning…</string>
+    <string name="server_element_select_server_hint">Use this server</string>
+    <string name="server_element_forget_lru_server_hint">Forget this server</string>
+    <string name="server_element_rename_server_hint">Rename this server</string>
+    <string name="wPlayer_Volume_Label">Volume</string>
+    <string name="wPlayer_BtnNext">Play next</string>
+    <string name="wPlayer_BtnPlayPause">Play/Pause</string>
+    <string name="wPlayer_BtnPrev">Play previous</string>
+    <string name="wPlayer_PlayPosition_JumpForward">Jump 20 seconds forward</string>
+    <string name="wPlayer_PlayPosition_JumpBack">Jump 25 seconds back</string>
+    <string name="server_select_request_name_dialog_title">Select name…</string>
+    <string name="wPlayer_ToggleMoreOptions">See more options</string>
+    <string name="wPlayer_SetTheme">Change theme</string>
+    <string name="wDirListing_JumpToBookmark_label">Goto bookmark…</string>
+    <string name="wDirListing_Bookmark_label">Bookmark location</string>
+    <string name="wDirListing_ManageBookmark_label">Manage bookmarks</string>
+    <string name="dir_listing_saved_bookmark">Saved bookmark %1$s</string>
+    <string name="dir_listing_goto_bookmark_title">Jump to bookmark…</string>
+    <string name="dir_listing_delete_bookmark_title">Pick a bookmark to delete</string>
+    <string name="wPlayer_ExtraOptions_label">Extra options</string>
+    <string name="dir_listing_already_seen_icon">Video already seen</string>
+    <string name="server_select_lru_selection_label">Recently used servers</string>
+    <string name="playlist_item_marked_as_unseen">Element removed from recently viewed history</string>
+
+    <string name="widget_config_label">Widget Configuration</string>
+    <string name="widget_config_command_spinner_label">MPC Command:</string>
+    <string name="widget_config_submit_button_label">Save</string>
+</resources>

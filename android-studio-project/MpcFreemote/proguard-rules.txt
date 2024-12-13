@@ -1,0 +1,55 @@
+-keeppackagenames com.github.warren_bank.**
+
+-keepattributes InnerClasses
+
+-keep class com.github.warren_bank.mpcfreemote.** { *; }
+-keep class com.eeeeeric.mpc.hc.api.** { *; }
+-keep class org.jsoup.**
+
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+-keepnames class org.jsoup.nodes.Entities
+
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+
+# ===================
+# Android boilerplate
+# ===================
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.appwidget.AppWidgetProvider
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.view.View
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+# ===================
+# Other
+# ===================
+-dontnote javax.xml.**
+-dontnote org.w3c.dom.**
+-dontnote org.xml.sax.**
+-keepattributes **
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}

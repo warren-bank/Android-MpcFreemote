@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WidgetConfigActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/widget_config_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/widget_config_command_spinner"
+        android:text="@string/widget_config_command_spinner_label"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:visibility="gone" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/widget_config_submit_button"
+        android:text="@string/widget_config_submit_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

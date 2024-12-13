@@ -1,0 +1,74 @@
+apply from: '../constants.gradle'
+apply plugin: 'com.android.application'
+
+android {
+  namespace project.ext.applicationId
+
+  compileSdkVersion project.ext.compileSdkVersion
+  buildToolsVersion project.ext.buildToolsVersion
+
+  compileOptions {
+    sourceCompatibility project.ext.javaVersion
+    targetCompatibility project.ext.javaVersion
+  }
+
+  defaultConfig {
+    minSdkVersion    project.ext.minSdkVersion
+    targetSdkVersion project.ext.targetSdkVersion
+
+    applicationId project.ext.applicationId
+    versionName   project.ext.releaseVersion
+    versionCode   project.ext.releaseVersionCode
+
+    archivesBaseName += "-$versionName"
+  }
+
+  flavorDimensions "languageResources"
+
+  productFlavors {
+    withAllLanguageTranslations {
+      dimension "languageResources"
+    }
+    english {
+      dimension "languageResources"
+    }
+  }
+
+  buildTypes {
+    release {
+      debuggable      false
+      jniDebuggable   false
+      shrinkResources true
+      minifyEnabled   true
+      proguardFiles = [
+        "proguard-rules.txt",
+        getDefaultProguardFile('proguard-android.txt')
+      ]
+    }
+    debug {
+      debuggable      true
+      jniDebuggable   true
+      shrinkResources false
+      minifyEnabled   false
+    }
+  }
+
+  dependenciesInfo {
+    includeInApk    = false  // Disables dependency metadata when building APKs.
+    includeInBundle = false  // Disables dependency metadata when building Android App Bundles.
+  }
+
+  lintOptions {
+    disable 'MissingTranslation'
+    abortOnError true
+  }
+}
+
+dependencies {
+  implementation 'androidx.appcompat:appcompat:' + project.ext.libVersionAndroidxAppCompat     // (1.1 MB) https://mvnrepository.com/artifact/androidx.appcompat/appcompat?repo=google
+  implementation 'androidx.fragment:fragment:'   + project.ext.libVersionAndroidxFragment      // (221 KB) https://mvnrepository.com/artifact/androidx.fragment/fragment?repo=google
+
+  implementation 'com.eeeeeric:mpc-hc-api:'      + project.ext.libVersionMpcHcApi              // ( 21 KB) https://mvnrepository.com/artifact/com.eeeeeric/mpc-hc-api/0.1.0
+                                                                                               // (327 KB) https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp/3.2.0
+                                                                                               // (311 KB) https://mvnrepository.com/artifact/org.jsoup/jsoup/1.9.2
+}

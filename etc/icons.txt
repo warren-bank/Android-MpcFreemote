@@ -1,0 +1,7 @@
+launcher
+========
+https://github.com/unifiedremote/Remotes/blob/master/Main/MPC-HC/icon_hires.png
+
+MPC server
+==========
+https://github.com/google/material-design-icons/blob/4.0.0/android/hardware/desktop_windows/materialiconsround/black/res/drawable-hdpi/round_desktop_windows_black_48.png
