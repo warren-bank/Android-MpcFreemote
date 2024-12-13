@@ -11,6 +11,7 @@ project.ext {
 
     libVersionAndroidxAppCompat = '1.2.0'
     libVersionAndroidxFragment  = '1.2.5'
+    libVersionGoogleFlexbox     = '3.0.0'
     libVersionMpcHcApi          = '0.1.0'
         // transitive dependencies:
         //   https://github.com/eeeeeric/mpc-hc-api/blob/0.1.0/pom.xml#L134-L144

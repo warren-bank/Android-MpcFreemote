@@ -26,6 +26,7 @@ public class MainActivity extends FragmentActivity
     private PlayerControllerView playerControllerView;
     private ServerSelectView serverSelectView;
     private DirListingView dirListView;
+    private RemoteControlView remoteControlView;
     private MainMenuNavigation mainMenu;
     private boolean periodicStatusUpdateRequested = false;
 
@@ -33,13 +34,15 @@ public class MainActivity extends FragmentActivity
         private final ViewPager parentView;
         private final ServerSelectView serverSelectView;
         private final DirListingView dirListView;
+        private final RemoteControlView remoteControlView;
 
-        MainMenuNavigation(ViewPager view, FragmentManager fm, ServerSelectView serverSelectView, DirListingView dirListView)
+        MainMenuNavigation(ViewPager view, FragmentManager fm, ServerSelectView serverSelectView, DirListingView dirListView, RemoteControlView remoteControlView)
         {
             super(fm);
-            this.parentView = view;
-            this.serverSelectView = serverSelectView;
-            this.dirListView = dirListView;
+            this.parentView        = view;
+            this.serverSelectView  = serverSelectView;
+            this.dirListView       = dirListView;
+            this.remoteControlView = remoteControlView;
 
             parentView.setAdapter(this);
             parentView.addOnPageChangeListener(this);
@@ -51,6 +54,7 @@ public class MainActivity extends FragmentActivity
             switch (i) {
                 case 0: return serverSelectView;
                 case 1: return dirListView;
+                case 2: return remoteControlView;
                 default: throw new RuntimeException(MainMenuNavigation.class.getName() + " tried to select a page item which doesn't exist.");
             }
         }
@@ -60,13 +64,14 @@ public class MainActivity extends FragmentActivity
             switch (position) {
                 case 0: return getString(R.string.main_menu_title_servers);
                 case 1: return getString(R.string.main_menu_title_dir_listing);
+                case 2: return getString(R.string.main_menu_title_remote_control);
                 default: throw new RuntimeException(MainMenuNavigation.class.getName() + " tried to get a title for a page which doesn't exist.");
             }
         }
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
 
         @Override public void onPageScrolled(int i, float v, int i2) {}
@@ -77,12 +82,14 @@ public class MainActivity extends FragmentActivity
             switch (i) {
                 case 0: /*serverSelectView.scanServers();*/ return;
                 case 1: /*dirListView.triggerCurrentPathListUpdate();*/ return;
+                case 2: return;
                 default: throw new RuntimeException(MainMenuNavigation.class.getName() + " selected a page which doesn't exist.");
             }
         }
 
         void jumpToServerSelection() { parentView.setCurrentItem(0, true); }
         void jumpToDirectoryList()   { parentView.setCurrentItem(1, true); }
+        void jumpToRemoteControl()   { parentView.setCurrentItem(2, true); }
     }
 
     private void safePutFragment(final Bundle outState, final String name, Fragment obj) {
@@ -104,6 +111,7 @@ public class MainActivity extends FragmentActivity
         safePutFragment(outState, PlayerControllerView.class.getName(), playerControllerView);
         safePutFragment(outState, ServerSelectView.class.getName(), serverSelectView);
         safePutFragment(outState, DirListingView.class.getName(), dirListView);
+        safePutFragment(outState, RemoteControlView.class.getName(), remoteControlView);
     }
 
     @Override
@@ -122,15 +130,17 @@ public class MainActivity extends FragmentActivity
         // Create or restore all views
         if (savedInstanceState != null) {
             playerControllerView = (PlayerControllerView) getSupportFragmentManager().getFragment(savedInstanceState, PlayerControllerView.class.getName());
-            serverSelectView = (ServerSelectView) getSupportFragmentManager().getFragment(savedInstanceState, ServerSelectView.class.getName());
-            dirListView = (DirListingView) getSupportFragmentManager().getFragment(savedInstanceState, DirListingView.class.getName());
+            serverSelectView     = (ServerSelectView)     getSupportFragmentManager().getFragment(savedInstanceState, ServerSelectView.class.getName());
+            dirListView          = (DirListingView)       getSupportFragmentManager().getFragment(savedInstanceState, DirListingView.class.getName());
+            remoteControlView    = (RemoteControlView)    getSupportFragmentManager().getFragment(savedInstanceState, RemoteControlView.class.getName());
         }
 
         if (this.playerControllerView == null) this.playerControllerView = new PlayerControllerView();
-        if (this.serverSelectView == null) this.serverSelectView = new ServerSelectView();
-        if (this.dirListView == null) this.dirListView = new DirListingView();
+        if (this.serverSelectView     == null) this.serverSelectView     = new ServerSelectView();
+        if (this.dirListView          == null) this.dirListView          = new DirListingView();
+        if (this.remoteControlView    == null) this.remoteControlView    = new RemoteControlView();
 
-        this.mainMenu = new MainMenuNavigation(((ViewPager) super.findViewById(R.id.wMainMenu)), getSupportFragmentManager(), serverSelectView, dirListView);
+        this.mainMenu = new MainMenuNavigation(((ViewPager) super.findViewById(R.id.wMainMenu)), getSupportFragmentManager(), serverSelectView, dirListView, remoteControlView);
 
         getActiveMpcConnection();
     }

@@ -1,6 +1,7 @@
 package com.github.warren_bank.mpcfreemote;
 
 import com.github.warren_bank.mpcfreemote.R;
+import com.github.warren_bank.mpcfreemote.RemoteControlView;
 import com.github.warren_bank.mpcfreemote.WidgetProvider;
 import com.github.warren_bank.mpcfreemote.mpc_connector.MpcCommand;
 
@@ -15,8 +16,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-
-import java.util.List;
 
 public class WidgetConfigActivity extends AppCompatActivity
                                   implements View.OnClickListener {
@@ -53,7 +52,7 @@ public class WidgetConfigActivity extends AppCompatActivity
         submitButton   = (Button)  findViewById(R.id.widget_config_submit_button);
 
         commandSpinner.setAdapter(
-            new ArrayAdapter<MpcCommand>(this, android.R.layout.simple_spinner_item, getSpinnerCommands())
+            new ArrayAdapter<MpcCommand>(this, android.R.layout.simple_spinner_item, RemoteControlView.getRemoteControlCommands())
         );
         if (spinnerPosition != Spinner.INVALID_POSITION) {
             commandSpinner.setSelection(spinnerPosition);
@@ -78,21 +77,6 @@ public class WidgetConfigActivity extends AppCompatActivity
                 catch (Exception e) {}
                 break;
         }
-    }
-
-    private List<MpcCommand> getSpinnerCommands() {
-        List<MpcCommand> spinnerCommands = List.of(
-            MpcCommand.PLAY_PAUSE, MpcCommand.PAUSE, MpcCommand.PLAY, MpcCommand.STOP, MpcCommand.CLOSE, MpcCommand.EXIT,
-            MpcCommand.PREVIOUS, MpcCommand.NEXT,
-            MpcCommand.JUMP_TO_BEGINNING, MpcCommand.JUMP_BACKWARD_LARGE, MpcCommand.JUMP_BACKWARD_MEDIUM, MpcCommand.JUMP_BACKWARD_SMALL, MpcCommand.JUMP_FORWARD_SMALL, MpcCommand.JUMP_FORWARD_MEDIUM, MpcCommand.JUMP_FORWARD_LARGE,
-            MpcCommand.VOLUME_MUTE, MpcCommand.VOLUME_DOWN, MpcCommand.VOLUME_UP, MpcCommand.VOLUME_BOOST_MIN, MpcCommand.VOLUME_BOOST_DECREASE, MpcCommand.VOLUME_BOOST_INCREASE,
-            MpcCommand.AUDIO_DELAY_MINUS_10_MS, MpcCommand.AUDIO_DELAY_PLUS_10_MS,
-            MpcCommand.SUBTITLE_DELAY_MINUS, MpcCommand.SUBTITLE_DELAY_PLUS,
-            MpcCommand.RESET_RATE, MpcCommand.DECREASE_RATE, MpcCommand.INCREASE_RATE,
-            MpcCommand.VIEW_MINIMAL, MpcCommand.VIEW_NORMAL, MpcCommand.FULLSCREEN, MpcCommand.ALWAYS_ON_TOP
-        );
-
-        return spinnerCommands;
     }
 
     public void onConfigured(final int spinnerPosition, final String enumName, final int commandNameResourceId) {

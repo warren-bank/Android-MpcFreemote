@@ -4,7 +4,7 @@
 
 -keep class com.github.warren_bank.mpcfreemote.** { *; }
 -keep class com.eeeeeric.mpc.hc.api.** { *; }
--keep class org.jsoup.**
+-keep class org.jsoup.** { *; }
 
 -keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
 -keepnames class org.jsoup.nodes.Entities

@@ -4,6 +4,7 @@
     <string translatable="false" name="server_select_manual_selection_default_ip">192.168.0.</string>
     <string translatable="false" name="server_select_manual_selection_default_port">8192</string>
 
+    <string name="main_menu_title_remote_control">Remote Control</string>
     <string name="main_menu_title_dir_listing">Browse</string>
     <string name="dir_listing_current_path">Current path…</string>
     <string name="dir_listing_action_description">@string/wDirListing_ManageBookmark_label</string>
