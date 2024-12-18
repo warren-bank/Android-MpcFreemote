@@ -30,8 +30,8 @@ import java.util.List;
 public class DirListingView extends MpcFragment
                             implements View.OnClickListener,
                                        View.OnLongClickListener,
-                                       MpcPath.UICallback,
-                                       PopupMenu.OnMenuItemClickListener {
+                                       PopupMenu.OnMenuItemClickListener,
+                                       MpcPath.UICallback {
 
     public interface DirListingCallback {
         void onOpenFileRequest(final FileInfo fileInfo);

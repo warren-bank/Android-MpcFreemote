@@ -1,5 +1,7 @@
 package com.github.warren_bank.mpcfreemote;
 
+import com.github.warren_bank.mpcfreemote.R;
+import com.github.warren_bank.mpcfreemote.model.MpcStatus;
 import com.github.warren_bank.mpcfreemote.mpc_connector.MpcCommand;
 
 import androidx.annotation.NonNull;
@@ -13,12 +15,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PlayerControllerView extends MpcFragment
                                   implements View.OnClickListener,
-                                             SeekBar.OnSeekBarChangeListener  {
+                                             SeekBar.OnSeekBarChangeListener,
+                                             MpcStatus.UICallback {
     private Activity activity;
+    private MpcStatus mpcStatus = null;
 
     /* Android stuff                                                          */
     /**************************************************************************/
@@ -43,6 +48,7 @@ public class PlayerControllerView extends MpcFragment
 
         v.findViewById(R.id.wPlayer_ToggleMoreOptions).setOnClickListener(this);
         v.findViewById(R.id.wPlayer_SetTheme).setOnClickListener(this);
+        v.findViewById(R.id.wPlayer_ToggleStatusUpdates).setOnClickListener(this);
 
         return v;
     }
@@ -51,12 +57,15 @@ public class PlayerControllerView extends MpcFragment
     public void onAttach(@NonNull Context activity) {
         super.onAttach(activity);
         this.activity = (Activity) activity;
+        this.mpcStatus = new MpcStatus(mpcProvider, activity, this);
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
         this.activity = null;
+        this.mpcStatus.setEnabled(false);
+        this.mpcStatus = null;
     }
 
     /* Event handlers                                                         */
@@ -71,6 +80,7 @@ public class PlayerControllerView extends MpcFragment
             case R.id.wPlayer_BtnPlayPause: onBtnPlayPauseClicked(); break;
             case R.id.wPlayer_ToggleMoreOptions: onToggleMoreOptionsClicked(); break;
             case R.id.wPlayer_SetTheme: toggleTheme(); break;
+            case R.id.wPlayer_ToggleStatusUpdates: toggleStatusUpdates(); break;
             default:
                 throw new RuntimeException(getClass().getName() + " received an event it doesn't know how to handle.");
         }
@@ -87,7 +97,30 @@ public class PlayerControllerView extends MpcFragment
         }
     }
 
+    @Override
+    public void onMpcStatusUpdate(MpcStatus.Info info) {
+        if (this.activity == null) return;
+
+        final TextView statusTxt     = this.activity.findViewById(R.id.wPlayer_CurrentlyPlaying);
+        final SeekBar volumeCtrl     = this.activity.findViewById(R.id.wPlayer_Volume);
+        final SeekBar posCtrl        = this.activity.findViewById(R.id.wPlayer_PlayPosition);
+        final TextView currentPosTxt = this.activity.findViewById(R.id.wPlayer_PlayPosition_CurrentPositionText);
+        final TextView lengthTxt     = this.activity.findViewById(R.id.wPlayer_PlayPosition_Length);
+
+        int positionPercent = (info.duration > 0)
+            ? (int) (((float)info.position / (float)info.duration) * 100)
+            : 0;
+
+        statusTxt.setText(info.statestring + " - " + info.file);
+        volumeCtrl.setProgress(info.volumelevel);
+        posCtrl.setProgress(positionPercent);
+        currentPosTxt.setText(info.positionstring);
+        lengthTxt.setText(info.durationstring);
+    }
+
     private void onToggleMoreOptionsClicked() {
+        if (this.activity == null) return;
+
         View panel = this.activity.findViewById(R.id.wPlayer_ExtraOptions);
         if (panel.getVisibility() == View.GONE) {
             panel.setVisibility(View.VISIBLE);
@@ -171,5 +204,21 @@ public class PlayerControllerView extends MpcFragment
             Toast toast = Toast.makeText(getContext(), msg, Toast.LENGTH_LONG);
             toast.show();
         }
+    }
+
+    private void toggleStatusUpdates() {
+        if (this.mpcStatus == null) return;
+        this.mpcStatus.toggleEnabled();
+
+        if (this.mpcStatus.isEnabled()) return;
+        if (this.activity == null) return;
+
+        final TextView statusTxt     = this.activity.findViewById(R.id.wPlayer_CurrentlyPlaying);
+        final TextView currentPosTxt = this.activity.findViewById(R.id.wPlayer_PlayPosition_CurrentPositionText);
+        final TextView lengthTxt     = this.activity.findViewById(R.id.wPlayer_PlayPosition_Length);
+
+        statusTxt.setText("");
+        currentPosTxt.setText("00:00");
+        lengthTxt.setText("100%");
     }
 }

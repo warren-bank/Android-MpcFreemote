@@ -8,6 +8,7 @@ import com.eeeeeric.mpc.hc.api.MediaPlayerClassicHomeCinema;
 import com.eeeeeric.mpc.hc.api.WMCommand;
 
 import java.util.List;
+import java.util.Map;
 
 public class RemoteMpc {
 
@@ -44,6 +45,22 @@ public class RemoteMpc {
     }
 
     public Server getServer() { return srv; }
+
+    // IMPORTANT: the caller (MpcStatus) is responsible for using a background thread
+    public synchronized Map<String, String> getVariables() {
+        if (mpc == null) {
+            onConnectionError(null);
+            return null;
+        }
+
+        try {
+            return mpc.getVariables();
+        }
+        catch(Exception e) {
+            onConnectionError(e);
+        }
+        return null;
+    }
 
     // IMPORTANT: the caller (MpcPath) is responsible for using a background thread
     public synchronized List<FileInfo> browse(final FileInfo directory) {

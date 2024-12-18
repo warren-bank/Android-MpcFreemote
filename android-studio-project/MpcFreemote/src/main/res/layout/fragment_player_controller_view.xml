@@ -35,6 +35,14 @@
             android:id="@+id/wPlayer_SetTheme"
             android:layout_gravity="center_horizontal" />
 
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wPlayer_ToggleStatusUpdates"
+            android:id="@+id/wPlayer_ToggleStatusUpdates"
+            android:layout_gravity="center_horizontal" />
+
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dip"
@@ -64,6 +72,7 @@
                 android:singleLine="true"
                 android:ellipsize="end"
                 android:text=""
+                android:id="@+id/wPlayer_CurrentlyPlaying"
                 android:layout_gravity="center_horizontal" />
 
             <ImageButton
@@ -99,6 +108,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="00:00"
+                android:id="@+id/wPlayer_PlayPosition_CurrentPositionText"
                 android:layout_gravity="center" />
 
             <SeekBar
@@ -114,6 +124,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="100%"
+                android:id="@+id/wPlayer_PlayPosition_Length"
                 android:layout_gravity="center" />
 
             <ImageButton
