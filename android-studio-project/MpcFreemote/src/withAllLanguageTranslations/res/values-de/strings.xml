@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Namen auswählen ...</string>
     <string name="wPlayer_ToggleMoreOptions">Weitere Optionen anzeigen</string>
     <string name="wPlayer_SetTheme">Thema ändern</string>
+    <string name="wPlayer_ToggleStatusUpdates">Regelmäßige Statusaktualisierungen umschalten</string>
     <string name="wDirListing_JumpToBookmark_label">Goto-Lesezeichen ...</string>
     <string name="wDirListing_Bookmark_label">Lesezeichenposition</string>
     <string name="wDirListing_ManageBookmark_label">Lesezeichen verwalten</string>

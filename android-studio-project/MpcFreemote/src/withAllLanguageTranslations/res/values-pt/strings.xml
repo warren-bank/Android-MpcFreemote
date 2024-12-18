@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Selecionar nome ...</string>
     <string name="wPlayer_ToggleMoreOptions">Ver mais opções</string>
     <string name="wPlayer_SetTheme">Tema de mudança</string>
+    <string name="wPlayer_ToggleStatusUpdates">Alternar atualizações de status periódica</string>
     <string name="wDirListing_JumpToBookmark_label">Goto bookmark ...</string>
     <string name="wDirListing_Bookmark_label">Localização do indicador</string>
     <string name="wDirListing_ManageBookmark_label">Gerenciar indicadores</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Dewis enw ...</string>
     <string name="wPlayer_ToggleMoreOptions">Gweld mwy o ddewisiadau</string>
     <string name="wPlayer_SetTheme">Newid thema</string>
+    <string name="wPlayer_ToggleStatusUpdates">Toglo diweddariad statws cyfnodol</string>
     <string name="wDirListing_JumpToBookmark_label">Mynd i nôd tudalen ...</string>
     <string name="wDirListing_Bookmark_label">Lleoliad nod tudalen</string>
     <string name="wDirListing_ManageBookmark_label">Rheoli nodau tudalen</string>

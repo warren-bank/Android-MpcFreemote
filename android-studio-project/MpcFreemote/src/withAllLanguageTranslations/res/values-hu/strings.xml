@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Név kiválasztása ...</string>
     <string name="wPlayer_ToggleMoreOptions">További beállítások</string>
     <string name="wPlayer_SetTheme">Téma módosítása</string>
+    <string name="wPlayer_ToggleStatusUpdates">Időszakos állapotfrissítések átkapcsolása</string>
     <string name="wDirListing_JumpToBookmark_label">A Goto könyvjelző ...</string>
     <string name="wDirListing_Bookmark_label">Könyvjelző helye</string>
     <string name="wDirListing_ManageBookmark_label">Könyvjelzők kezelése</string>

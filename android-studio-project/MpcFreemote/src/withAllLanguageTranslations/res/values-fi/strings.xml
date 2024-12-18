@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Valitse nimi ...</string>
     <string name="wPlayer_ToggleMoreOptions">Katso lisää vaihtoehtoja</string>
     <string name="wPlayer_SetTheme">Muuta teema</string>
+    <string name="wPlayer_ToggleStatusUpdates">Vaihtaa säännöllisesti tilapäivityksiä</string>
     <string name="wDirListing_JumpToBookmark_label">Siirry kirjanmerkkiin ...</string>
     <string name="wDirListing_Bookmark_label">Kirjanmerkin sijainti</string>
     <string name="wDirListing_ManageBookmark_label">Manage-kirjanmerkit</string>

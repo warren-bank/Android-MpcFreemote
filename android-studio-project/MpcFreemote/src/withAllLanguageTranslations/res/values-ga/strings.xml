@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Roghnaigh ainm ...</string>
     <string name="wPlayer_ToggleMoreOptions">Féach ar roghanna níos mó</string>
     <string name="wPlayer_SetTheme">Athraigh an téama</string>
+    <string name="wPlayer_ToggleStatusUpdates">Scoránaigh nuashonruithe stádais thréimhsiúil</string>
     <string name="wDirListing_JumpToBookmark_label">Leabharmharc á sheoladh ...</string>
     <string name="wDirListing_Bookmark_label">Suíomh na leabharmharcanna</string>
     <string name="wDirListing_ManageBookmark_label">Bainistigh leabharmharcanna</string>

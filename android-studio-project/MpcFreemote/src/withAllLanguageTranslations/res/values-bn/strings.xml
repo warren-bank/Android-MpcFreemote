@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">নাম নির্বাচন করুন ...</string>
     <string name="wPlayer_ToggleMoreOptions">আরো অপশন দেখুন</string>
     <string name="wPlayer_SetTheme">থিম পরিবর্তন করো</string>
+    <string name="wPlayer_ToggleStatusUpdates">পর্যায়ক্রমিক অবস্থা সংক্রান্ত আপডেট টগল করুন</string>
     <string name="wDirListing_JumpToBookmark_label">বুকমার্ক ...</string>
     <string name="wDirListing_Bookmark_label">বুকমার্ক অবস্থান</string>
     <string name="wDirListing_ManageBookmark_label">বুকমার্ক পরিচালনা করুন</string>

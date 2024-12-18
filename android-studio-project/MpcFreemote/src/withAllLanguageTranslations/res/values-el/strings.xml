@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Επιλογή ονόματος ...</string>
     <string name="wPlayer_ToggleMoreOptions">Δείτε περισσότερες επιλογές</string>
     <string name="wPlayer_SetTheme">Αλλαγή θέματος:</string>
+    <string name="wPlayer_ToggleStatusUpdates">Εναλλαγή περιοδικών ενημερώσεων κατάστασης</string>
     <string name="wDirListing_JumpToBookmark_label">Ορισμός σελιδοδείκτη ...</string>
     <string name="wDirListing_Bookmark_label">Θέση σελιδοδεικτών</string>
     <string name="wDirListing_ManageBookmark_label">Διαχείριση σελιδοδεικτών</string>

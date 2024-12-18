@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Pilih nama ...</string>
     <string name="wPlayer_ToggleMoreOptions">Lihat lebih banyak opsi</string>
     <string name="wPlayer_SetTheme">Ubah tema</string>
+    <string name="wPlayer_ToggleStatusUpdates">Jungkitkan pemutakhiran status periodik</string>
     <string name="wDirListing_JumpToBookmark_label">Goto bookmark ...</string>
     <string name="wDirListing_Bookmark_label">Lokasi markah</string>
     <string name="wDirListing_ManageBookmark_label">Kelola markah</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Vælg navn ...</string>
     <string name="wPlayer_ToggleMoreOptions">Se flere muligheder</string>
     <string name="wPlayer_SetTheme">Skift tema</string>
+    <string name="wPlayer_ToggleStatusUpdates">Aktivér / deaktivér periodiske statusopdateringer</string>
     <string name="wDirListing_JumpToBookmark_label">Gå til bogmærket ...</string>
     <string name="wDirListing_Bookmark_label">Bogmærkeplacering</string>
     <string name="wDirListing_ManageBookmark_label">Administrér bogmærker</string>

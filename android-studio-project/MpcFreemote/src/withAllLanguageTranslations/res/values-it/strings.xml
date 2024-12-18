@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Seleziona nome ...</string>
     <string name="wPlayer_ToggleMoreOptions">Vedi più opzioni</string>
     <string name="wPlayer_SetTheme">Tema di modifica</string>
+    <string name="wPlayer_ToggleStatusUpdates">Attiva gli aggiornamenti di stato periodico</string>
     <string name="wDirListing_JumpToBookmark_label">Goto segnalibro ...</string>
     <string name="wDirListing_Bookmark_label">Posizione segnalibro</string>
     <string name="wDirListing_ManageBookmark_label">Gestire i segnalibri</string>

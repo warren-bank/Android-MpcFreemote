@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Изаберите име ...</string>
     <string name="wPlayer_ToggleMoreOptions">Погледајте више опција</string>
     <string name="wPlayer_SetTheme">Промени тему</string>
+    <string name="wPlayer_ToggleStatusUpdates">Укључи/искључи ажурирања периодичних статуса</string>
     <string name="wDirListing_JumpToBookmark_label">Гото обележивач ...</string>
     <string name="wDirListing_Bookmark_label">Локација обележивача</string>
     <string name="wDirListing_ManageBookmark_label">Управљање обележивачима</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">नाम चुनें ...</string>
     <string name="wPlayer_ToggleMoreOptions">अधिक विकल्प देखें</string>
     <string name="wPlayer_SetTheme">प्रसंग बदलें</string>
+    <string name="wPlayer_ToggleStatusUpdates">आवधिक स्थिति अद्यतन टॉगल करें</string>
     <string name="wDirListing_JumpToBookmark_label">पुस्तचिह्न में जाएँ ...</string>
     <string name="wDirListing_Bookmark_label">पसंदीदा स्थान</string>
     <string name="wDirListing_ManageBookmark_label">पसंद प्रबंधित करें</string>

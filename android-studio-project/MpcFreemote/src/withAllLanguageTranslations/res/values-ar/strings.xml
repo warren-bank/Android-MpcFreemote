@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">تحديد اسم ...</string>
     <string name="wPlayer_ToggleMoreOptions">ارجع الى مزيد من الاختيارات</string>
     <string name="wPlayer_SetTheme">تغيير النسق الرئيسي</string>
+    <string name="wPlayer_ToggleStatusUpdates">تبديل تعديلات الحالة الدورية</string>
     <string name="wDirListing_JumpToBookmark_label">اذهب الى علامة توقف ...</string>
     <string name="wDirListing_Bookmark_label">مكان علامة التوقف</string>
     <string name="wDirListing_ManageBookmark_label">ادارة علامات التوقف</string>

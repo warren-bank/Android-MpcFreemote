@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Izvēlēties nosaukumu ...</string>
     <string name="wPlayer_ToggleMoreOptions">Skatīt vairāk iespēju</string>
     <string name="wPlayer_SetTheme">Mainīt tēmu</string>
+    <string name="wPlayer_ToggleStatusUpdates">Pārslēgt periodisko statusa atjauninājumus</string>
     <string name="wDirListing_JumpToBookmark_label">Goto grāmatzīme ...</string>
     <string name="wDirListing_Bookmark_label">Grāmatzīmju izvietojums</string>
     <string name="wDirListing_ManageBookmark_label">Pārvaldīt grāmatzīmes</string>

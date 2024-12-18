@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">เลือกชื่อ...</string>
     <string name="wPlayer_ToggleMoreOptions">ดูอ็อพชันเพิ่มเติม</string>
     <string name="wPlayer_SetTheme">เปลี่ยนธีม</string>
+    <string name="wPlayer_ToggleStatusUpdates">สลับการอัพเดตสถานะเป็นระยะๆ</string>
     <string name="wDirListing_JumpToBookmark_label">ไปยังบุ๊กมาร์ก...</string>
     <string name="wDirListing_Bookmark_label">ตำแหน่งบุ๊กมาร์ก</string>
     <string name="wDirListing_ManageBookmark_label">การจัดการบุ๊กมาร์ก</string>

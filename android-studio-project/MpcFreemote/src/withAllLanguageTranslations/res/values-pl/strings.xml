@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Wybierz nazwę ...</string>
     <string name="wPlayer_ToggleMoreOptions">Zobacz więcej opcji</string>
     <string name="wPlayer_SetTheme">Zmień kompozycję</string>
+    <string name="wPlayer_ToggleStatusUpdates">Przełącz okresowe aktualizacje statusu</string>
     <string name="wDirListing_JumpToBookmark_label">Idź do zakładki ...</string>
     <string name="wDirListing_Bookmark_label">Położenie zakładki</string>
     <string name="wDirListing_ManageBookmark_label">Zarządzaj zakładkami</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Ad seç ...</string>
     <string name="wPlayer_ToggleMoreOptions">Daha fazla seçeneğe bakın</string>
     <string name="wPlayer_SetTheme">Temayı değiştir</string>
+    <string name="wPlayer_ToggleStatusUpdates">Dönemsel durum güncelleştirmelerini değiştir</string>
     <string name="wDirListing_JumpToBookmark_label">Yer işareti ekle ...</string>
     <string name="wDirListing_Bookmark_label">Yer işareti konumu</string>
     <string name="wDirListing_ManageBookmark_label">Yer işaretlerini yönet</string>

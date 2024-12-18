@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">పేరు యెంపికచేయుము ...</string>
     <string name="wPlayer_ToggleMoreOptions">మరిన్ని ఐచ్ఛికములు చూడండి</string>
     <string name="wPlayer_SetTheme">థీమ్ను మార్చుము</string>
+    <string name="wPlayer_ToggleStatusUpdates">పునర్వచనపు స్థితిగతులను టాగల్ చేయుము</string>
     <string name="wDirListing_JumpToBookmark_label">పుస్తకం గుర్తు ...</string>
     <string name="wDirListing_Bookmark_label">బూక్మార్క్ స్థానము</string>
     <string name="wDirListing_ManageBookmark_label">పుస్తకం మార్కులు</string>

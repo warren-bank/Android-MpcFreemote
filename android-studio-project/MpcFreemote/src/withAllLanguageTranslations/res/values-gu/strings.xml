@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">નામ પસંદ કરો ...</string>
     <string name="wPlayer_ToggleMoreOptions">વધારે વિકલ્પો જુઓ</string>
     <string name="wPlayer_SetTheme">થીમ બદલો</string>
+    <string name="wPlayer_ToggleStatusUpdates">સામયિક સ્થિતિ સુધારાઓ બદલો</string>
     <string name="wDirListing_JumpToBookmark_label">બુકમાર્ક પર જાઓ ...</string>
     <string name="wDirListing_Bookmark_label">બુકમાર્ક સ્થાન</string>
     <string name="wDirListing_ManageBookmark_label">બુકમાર્કો ને સંચાલિત કરો</string>

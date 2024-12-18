@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Sélectionner un nom ...</string>
     <string name="wPlayer_ToggleMoreOptions">Voir plus d\'options</string>
     <string name="wPlayer_SetTheme">Modifier le thème</string>
+    <string name="wPlayer_ToggleStatusUpdates">Basculement des mises à jour de statut périodiques</string>
     <string name="wDirListing_JumpToBookmark_label">Aller au signet ...</string>
     <string name="wDirListing_Bookmark_label">Emplacement de signet</string>
     <string name="wDirListing_ManageBookmark_label">Gérer les signets</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">பெயரை தேர்ந்தெடு ...</string>
     <string name="wPlayer_ToggleMoreOptions">அதிக விருப்பங்கள் பார்க்கவும்</string>
     <string name="wPlayer_SetTheme">தலைப்பை மாற்று</string>
+    <string name="wPlayer_ToggleStatusUpdates">காலநிலை நிலை புதுப்பித்தல் மாற்று</string>
     <string name="wDirListing_JumpToBookmark_label">புத்தகக்குறி</string>
     <string name="wDirListing_Bookmark_label">புத்தகக்குறி இடம்</string>
     <string name="wDirListing_ManageBookmark_label">புத்தகக்குறிகளை மேலாக</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Изберете име ...</string>
     <string name="wPlayer_ToggleMoreOptions">Вижте повече опции</string>
     <string name="wPlayer_SetTheme">Промяна на тема</string>
+    <string name="wPlayer_ToggleStatusUpdates">Актуализиране на периодичните актуализации на статус</string>
     <string name="wDirListing_JumpToBookmark_label">Показалец на GOto ...</string>
     <string name="wDirListing_Bookmark_label">Местоположение на отметка</string>
     <string name="wDirListing_ManageBookmark_label">Управление на отметки</string>

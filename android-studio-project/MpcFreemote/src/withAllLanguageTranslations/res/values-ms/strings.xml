@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Pilih nama ...</string>
     <string name="wPlayer_ToggleMoreOptions">Lihat lagi pilihan</string>
     <string name="wPlayer_SetTheme">Ubah tema</string>
+    <string name="wPlayer_ToggleStatusUpdates">Togol kemaskini status berkala</string>
     <string name="wDirListing_JumpToBookmark_label">Goto tanda buku ...</string>
     <string name="wDirListing_Bookmark_label">Lokasi tanda buku</string>
     <string name="wDirListing_ManageBookmark_label">Urus tanda buku</string>

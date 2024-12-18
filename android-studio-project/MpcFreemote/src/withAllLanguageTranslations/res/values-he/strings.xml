@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">בחירת שם ...</string>
     <string name="wPlayer_ToggleMoreOptions">ראו אפשרויות נוספות.</string>
     <string name="wPlayer_SetTheme">שינוי ערכת נושא</string>
+    <string name="wPlayer_ToggleStatusUpdates">מיתוג עדכוני מצב תקופתיים</string>
     <string name="wDirListing_JumpToBookmark_label">הוספת סימניה ...</string>
     <string name="wDirListing_Bookmark_label">מיקום סימניה</string>
     <string name="wDirListing_ManageBookmark_label">ניהול סימניות</string>

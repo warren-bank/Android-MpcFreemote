@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">選取名稱...</string>
     <string name="wPlayer_ToggleMoreOptions">請參閱更多選項</string>
     <string name="wPlayer_SetTheme">變更佈景主題</string>
+    <string name="wPlayer_ToggleStatusUpdates">切換定期狀態更新</string>
     <string name="wDirListing_JumpToBookmark_label">移至書籤...</string>
     <string name="wDirListing_Bookmark_label">書籤位置</string>
     <string name="wDirListing_ManageBookmark_label">管理書籤</string>

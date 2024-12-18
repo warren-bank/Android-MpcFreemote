@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">이름 선택 ...</string>
     <string name="wPlayer_ToggleMoreOptions">자세히 보기</string>
     <string name="wPlayer_SetTheme">테마 변경</string>
+    <string name="wPlayer_ToggleStatusUpdates">정기적인 상태 업데이트 전환</string>
     <string name="wDirListing_JumpToBookmark_label">책갈피를 지정한다.</string>
     <string name="wDirListing_Bookmark_label">책갈피 위치</string>
     <string name="wDirListing_ManageBookmark_label">책갈피 관리하기</string>

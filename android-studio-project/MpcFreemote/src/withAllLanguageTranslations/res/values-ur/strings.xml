@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">منتخب نام ...</string>
     <string name="wPlayer_ToggleMoreOptions">مزید اختیارات دیکھیں</string>
     <string name="wPlayer_SetTheme">تھیم تبدیل</string>
+    <string name="wPlayer_ToggleStatusUpdates">ٹوگل متواتر کا درجہ اپ ڈیٹ</string>
     <string name="wDirListing_JumpToBookmark_label">گوٹو بک مارک ...</string>
     <string name="wDirListing_Bookmark_label">بک مارک مقام</string>
     <string name="wDirListing_ManageBookmark_label">منکال بکمارکلٹ</string>

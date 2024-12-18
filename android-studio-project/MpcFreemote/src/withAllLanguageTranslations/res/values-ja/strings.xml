@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">名前の選択 ...</string>
     <string name="wPlayer_ToggleMoreOptions">詳細オプションを表示</string>
     <string name="wPlayer_SetTheme">テーマの変更</string>
+    <string name="wPlayer_ToggleStatusUpdates">定期的状況更新の切り替え</string>
     <string name="wDirListing_JumpToBookmark_label">ブックマークにジャンプ ...</string>
     <string name="wDirListing_Bookmark_label">ブックマーク・ロケーション</string>
     <string name="wDirListing_ManageBookmark_label">ブックマークの管理</string>

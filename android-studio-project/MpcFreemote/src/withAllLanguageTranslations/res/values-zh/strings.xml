@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">选择名称...</string>
     <string name="wPlayer_ToggleMoreOptions">查看更多选项</string>
     <string name="wPlayer_SetTheme">更改主题</string>
+    <string name="wPlayer_ToggleStatusUpdates">切换定期状态更新</string>
     <string name="wDirListing_JumpToBookmark_label">转至书签...</string>
     <string name="wDirListing_Bookmark_label">书签位置</string>
     <string name="wDirListing_ManageBookmark_label">管理书签</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Vali nimi ...</string>
     <string name="wPlayer_ToggleMoreOptions">Vaata rohkem valikuid</string>
     <string name="wPlayer_SetTheme">Muuda teemat</string>
+    <string name="wPlayer_ToggleStatusUpdates">Perioodiliste olekuuuenduste lülitamine</string>
     <string name="wDirListing_JumpToBookmark_label">Gooto järjehoidja ...</string>
     <string name="wDirListing_Bookmark_label">Järjehoidja asukoht</string>
     <string name="wDirListing_ManageBookmark_label">Järjehoidja haldamine</string>

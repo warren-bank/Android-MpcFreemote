@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">പേര് തെരഞ്ഞെടുക്കുക ...</string>
     <string name="wPlayer_ToggleMoreOptions">കൂടുതല് ഉപാധികള് കാണുക</string>
     <string name="wPlayer_SetTheme">പ്രമേയം മാറ്റുക</string>
+    <string name="wPlayer_ToggleStatusUpdates">പദാവലികളുടെ അവസാന വിവരങ്ങള് ടോഗിള് ചെയ്യുക</string>
     <string name="wDirListing_JumpToBookmark_label">പുസ്തക അടയാളം ...</string>
     <string name="wDirListing_Bookmark_label">ഓര്മ്മക്കുറിപ്പു് സ്ഥലം</string>
     <string name="wDirListing_ManageBookmark_label">ഓര്മ്മക്കുറിപ്പുകള് കൈമാറിയുക</string>

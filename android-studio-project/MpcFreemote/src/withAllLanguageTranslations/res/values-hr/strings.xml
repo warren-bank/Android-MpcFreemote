@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Izaberite ime ...</string>
     <string name="wPlayer_ToggleMoreOptions">Pogledajte više opcija</string>
     <string name="wPlayer_SetTheme">Promjena teme</string>
+    <string name="wPlayer_ToggleStatusUpdates">Prebacivanje periodičnih ažuriranja statusa</string>
     <string name="wDirListing_JumpToBookmark_label">Goto knjiška oznaka ...</string>
     <string name="wDirListing_Bookmark_label">Lokacija knjiške oznake</string>
     <string name="wDirListing_ManageBookmark_label">Upravljanje knjišima</string>

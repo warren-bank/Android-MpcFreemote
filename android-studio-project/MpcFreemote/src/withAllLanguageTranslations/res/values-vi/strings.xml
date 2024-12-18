@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Chọn tên ...</string>
     <string name="wPlayer_ToggleMoreOptions">Xem thêm tùy chọn</string>
     <string name="wPlayer_SetTheme">Đổi sắc thái</string>
+    <string name="wPlayer_ToggleStatusUpdates">Bật các cập nhật trạng thái định kỳ</string>
     <string name="wDirListing_JumpToBookmark_label">Đánh dấu ...</string>
     <string name="wDirListing_Bookmark_label">Vị trí Đánh dấu</string>
     <string name="wDirListing_ManageBookmark_label">Quản lý đánh dấu</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">Выберите имя ...</string>
     <string name="wPlayer_ToggleMoreOptions">См. дополнительные опции</string>
     <string name="wPlayer_SetTheme">Изменить тему</string>
+    <string name="wPlayer_ToggleStatusUpdates">Включить/выключить периодическое обновление состояния</string>
     <string name="wDirListing_JumpToBookmark_label">Создать закладку ...</string>
     <string name="wDirListing_Bookmark_label">Расположение закладки</string>
     <string name="wDirListing_ManageBookmark_label">Управление закладками</string>

@@ -29,6 +29,7 @@
     <string name="server_select_request_name_dialog_title">नाम चयन गर्नुहोस् ...</string>
     <string name="wPlayer_ToggleMoreOptions">थप विकल्प हेर्नुहोस्</string>
     <string name="wPlayer_SetTheme">विषयवस्तु परिवर्तन गर्नुहोस्</string>
+    <string name="wPlayer_ToggleStatusUpdates">आवधिक स्थिति अद्यावधिक टगल गर्नुहोस्</string>
     <string name="wDirListing_JumpToBookmark_label">पुस्तकचिनो जानुहोस् ...</string>
     <string name="wDirListing_Bookmark_label">पुस्तकचिनो स्थान</string>
     <string name="wDirListing_ManageBookmark_label">पुस्तकचिनो प्रबन्ध गर्नुहोस्</string>
